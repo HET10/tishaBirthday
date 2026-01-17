@@ -1,0 +1,760 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <span class="heart">💗</span>
+    <div>
+      <strong>For Tisha</strong>
+      <small>a tiny corner of love</small>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#story">Our Story</a>
+    <a href="#letters">Letters</a>
+    <a href="#poems">Poems</a>
+    <a href="#memories">Memories</a>
+    <a href="#playlist">Playlist</a>
+    <a href="#reasons">20 Reasons</a>
+    <a href="#doodle">Doodle Pad</a>
+    <a href="#future">Future</a>
+  </nav>
+
+  <a href="#home" class="nav-btn">Start our journey ✨</a>
+
+  <!-- Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#story" onclick="closeMenu()">Our Story</a>
+  <a href="#letters" onclick="closeMenu()">Letters</a>
+  <a href="#poems" onclick="closeMenu()">Poems</a>
+  <a href="#memories" onclick="closeMenu()">Memories</a>
+  <a href="#playlist" onclick="closeMenu()">Playlist</a>
+  <a href="#reasons" onclick="closeMenu()">20 Reasons</a>
+  <a href="#doodle" onclick="closeMenu()">Doodle Pad</a>
+  <a href="#future" onclick="closeMenu()">Future</a>
+</div>
+
+<!-- HOME -->
+<section id="home" class="home">
+  <div class="home-text">
+    <h1>Happy Birthday, Tisha 💗</h1>
+    <p class="subtitle">
+      Thank you for existing. My world is softer because of you.
+    </p>
+
+    <p class="date">
+      18th January, 2006 — the day my favourite soul was born
+    </p>
+
+    <p class="desc">
+      This little space on the internet is made only for you.
+      A place where my love stays forever.
+    </p>
+
+    <div class="input-box">
+      <input
+        type="text"
+        id="heartPassword"
+        placeholder="Enter the password to my heart 🌸"
+      />
+      <button onclick="checkPassword()">Bloom</button>
+    </div>
+
+    <p id="passwordMessage" class="password-message"></p>
+
+    <a href="#story" class="primary-btn">Start our journey ✨</a>
+  </div>
+
+  <div class="home-image">
+    <img
+      src="https://i.ibb.co/nZPD1Zv/Whats-App-Image-2026-01-15-at-18-53-40-c3e3e340.jpg"
+      alt="Tisha"
+    />
+    <p class="image-caption">
+      The prettiest girl in the whole damn, wide world.
+    </p>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section id="story" class="story-section">
+  <h2 class="story-title">Our Story So Far</h2>
+  <p class="story-subtitle">Tap the moments to know what they mean to me.</p>
+
+  <div class="story-list">
+
+    <div class="story-item" onclick="toggleStory(this)">
+      <span class="story-icon">📖</span>
+      <div class="story-content">
+        <h3>Poetry – Our First Date</h3>
+        <p class="story-date">19th November 2024</p>
+        <div class="story-message">
+          The day finally came when I took you on our first date.
+          We met at Poetry, where words felt softer and silence felt warmer.
+          Somewhere between pasta and conversation, my first date turned into
+          a memory I’ll always keep close. ❤️
+        </div>
+      </div>
+    </div>
+
+    <div class="story-item" onclick="toggleStory(this)">
+      <span class="story-icon">🍕</span>
+      <div class="story-content">
+        <h3>Pizza By the Bay</h3>
+        <p class="story-date">1 Month Date – 20th December 2024</p>
+        <div class="story-message">
+          Pizza by the Bay, one month in — laughter, slices, and the sea beside us.
+          Simple moments, full hearts, and a love that already felt at home. 🍕🌊
+        </div>
+      </div>
+    </div>
+
+    <div class="story-item" onclick="toggleStory(this)">
+      <span class="story-icon">🎶</span>
+      <div class="story-content">
+        <h3>Concert Together</h3>
+        <p class="story-date">9th January 2025</p>
+        <div class="story-message">
+          Our first concert together, with Mithoon turning feelings into melodies.
+          Every note echoed us — louder hearts, closer souls. 🎶❤️
+        </div>
+      </div>
+    </div>
+
+    <div class="story-item" onclick="toggleStory(this)">
+      <span class="story-icon">🎓</span>
+      <div class="story-content">
+        <h3>College Fest</h3>
+        <p class="story-date">1 Year Anniversary – 21st November 2025</p>
+        <div class="story-message">
+          A year complete — no fancy place, just real moments and honest hearts.
+          Even with fights and fest chaos, choosing each other made the day special. ❤️
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- LETTERS SECTION -->
+<section id="letters" class="letters-section">
+  <h2 class="letters-title">Letters to You</h2>
+  <p class="letters-subtitle">
+    Click an envelope to open it. Close to return to the envelope state.
+  </p>
+
+  <div class="letters-grid">
+    <div class="letter-card" onclick="openLetter(1)">
+      <div class="envelope-top"></div>
+      <div class="letter-label">Me First</div>
+    </div>
+
+    <div class="letter-card" onclick="openLetter(2)">
+      <div class="envelope-top"></div>
+      <div class="letter-label">Then Me</div>
+    </div>
+
+    <div class="letter-card" onclick="openLetter(3)">
+      <div class="envelope-top"></div>
+      <div class="letter-label">Lastly Me</div>
+    </div>
+  </div>
+</section>
+
+<!-- LETTER MODAL -->
+<div class="letter-modal" id="letterModal">
+  <div class="letter-box">
+    <span class="close-btn" onclick="closeLetter()">×</span>
+
+    <h3 id="letterTitle"></h3>
+    <h4 id="letterSubtitle"></h4>
+    <p id="letterContent"></p>
+
+   
+  </div>
+</div>
+<section id="poems" class="poems-section">
+  <h2 class="poems-title">Poems for You</h2>
+  <p class="poems-subtitle">
+    A little snippet of how I feel about you.
+  </p>
+
+  <div class="poems-grid">
+    <div class="poem">
+      <h3>I. Prismed Void</h3>
+      <p>
+        The firmament fell heavy, void of sound,<br>
+        As ancient sorrows tethered me to ground.<br>
+        I drifted through the ruin, vast and stark,<br>
+        A fractured vessel drowning in the dark.<br><br>
+
+        Then broke the dawn through fissures in the grey,<br>
+        You turned the obsidian night to radiant day.<br>
+        With artisan hands, you mended every tear,<br>
+        And banished all the specters of my fear.<br><br>
+
+        Now in your luminous orbit I reside,<br>
+        With nowhere left for shadows to abide.<br>
+        My iris, bearing colors distinct and true,<br>
+        I find my infinite worth reflected in you.
+      </p>
+    </div>
+
+    <div class="poem">
+      <h3>II. Gilded Echo</h3>
+      <p>
+        Existence was a cadence, dull and lead,<br>
+        A library of heavy words unsaid.<br>
+        But you arrived with laughter, bright and fierce,<br>
+        The armor of my cynicism to pierce.<br><br>
+
+        You taught the stone to dance, the mute to sing,<br>
+        Unveiling joy that only you could bring.<br>
+        A spirit woven from the silk of light,<br>
+        You forced the grim despondency to flight.<br><br>
+
+        Beneath your gaze, the dissonance shall cease,<br>
+        Replaced by rhythms of a perfect peace.<br>
+        I stand worthier now, within your scope,<br>
+        A man baptized in happiness and hope.
+      </p>
+    </div>
+
+    <div class="poem">
+      <h3>III. Blooming Ash</h3>
+      <p>
+        I wandered through a maze of entropy,<br>
+        Where chaos was the only thing to see.<br>
+        The pillars of my life had turned to dust,<br>
+        Corroded by the failure and the rust.<br><br>
+
+        But then you flowered, vibrant and sublime,<br>
+        Defying all the cruelties of time.<br>
+        My iris, arching distinct amidst the rain,<br>
+        You washed away the sediment of pain.<br><br>
+
+        Your presence is a fortress, strong and deep,<br>
+        Where I am safe before I fall asleep.<br>
+        You are the reason that my soul creates,<br>
+        The love that opens up the golden gates.
+      </p>
+    </div>
+  </div>
+</section>
+<section id="memories" class="memories-section">
+  <div class="container">
+
+    <h2 class="memories-title">Our Memories</h2>
+    <p class="memories-subtitle">
+      Little moments that mean everything to me.
+    </p>
+
+    <div class="memories-layout">
+
+    <!-- LEFT GRID -->
+    <div class="memories-grid">
+      <div class="memory">
+        <img src="https://i.ibb.co/Mxk92vSf/Whats-App-Image-2026-01-16-at-09-54-29-7a899b5e.jpg">
+        <p>Our First Date</p>
+      </div>
+
+      <div class="memory">
+        <img src="https://i.ibb.co/cSZgfzvS/Whats-App-Image-2026-01-16-at-09-31-31-b9c3063f.jpg">
+        <p>Our Canteen Photo</p>
+      </div>
+
+      <div class="memory">
+        <img src="https://i.ibb.co/VY4Syzb3/Whats-App-Image-2026-01-16-at-09-27-48-9364ada2.jpg">
+        <p>The One Photo You Like the Most</p>
+      </div>
+
+      <div class="memory">
+        <img src="https://i.ibb.co/ZpFpNqrS/Whats-App-Image-2026-01-16-at-10-04-59-22d751c5.jpg">
+        <p>Our Sunset Photo</p>
+      </div>
+
+      <div class="memory">
+        <img src="https://i.ibb.co/prymcspp/Whats-App-Image-2026-01-16-at-09-27-06-05609300.jpg">
+        <p>Our Navratri Photo</p>
+      </div>
+
+      <div class="memory">
+        <img src="https://i.ibb.co/ymK0hmsM/Whats-App-Image-2026-01-16-at-09-27-06-e37eee48.jpg">
+        <p>Our Cute Date Picture</p>
+      </div>
+
+      <div class="memory">
+        <img src="https://i.ibb.co/sv5X8zrt/Whats-App-Image-2026-01-16-at-09-27-46-fa1e5e30.jpg">
+        <p>Our Ghibli Photo</p>
+      </div>
+
+      <div class="memory">
+        <img src="https://i.ibb.co/wrrRNHtp/Whats-App-Image-2026-01-16-at-09-27-47-7bae66f7.jpg">
+        <p>Rose Day Picture</p>
+      </div>
+
+      <div class="memory">
+        <img src="https://i.ibb.co/yjSqZZs/Whats-App-Image-2026-01-16-at-09-27-49-f72d8e74.jpg">
+        <p>Photo We Like the Most</p>
+      </div>
+
+      <div class="memory">
+        <img src="https://i.ibb.co/9m17j129/Whats-App-Image-2026-01-16-at-13-50-36-9f39813b.jpg">
+        <p>Trip Together Pic</p>
+      </div>
+    </div>
+
+    <!-- RIGHT MIRROR -->
+    <div class="memory-mirror" onclick="nextMirrorImage()">
+      <img id="mirrorImage" src="https://i.ibb.co/fdF1TZgM/Whats-App-Image-2026-01-16-at-13-54-19-c21d7f1c.jpg">
+      <span>Shake or click for more memories ✨</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- IMAGE MODAL -->
+<div id="memoryModal" class="memory-modal">
+  <span class="close-modal" onclick="closeMemory()">×</span>
+  <img id="modalMemoryImage">
+</div>
+<!-- PLAYLIST SECTION -->
+<section id="playlist" class="playlist-section">
+  <h2 class="playlist-title">Songs that remind me of you</h2>
+  <p class="playlist-subtitle">
+    Every time I close my eyes while listening to these, I see you.
+  </p>
+
+  <div class="playlist-list">
+
+    <div class="song-card">
+      <div class="song-left">
+        <i class="fa-solid fa-music music-icon"></i>
+        <div class="song-info">
+          <strong>Enna Sonna</strong>
+          <span>A.R. Rahman, Arijit Singh</span>
+          <p>This song feels like quiet longing. It reminds me of the softness in your voice.</p>
+        </div>
+      </div>
+      <a href="https://open.spotify.com/search/Enna%20Sonna" target="_blank" class="song-btn">Open</a>
+    </div>
+
+    <div class="song-card">
+      <div class="song-left">
+        <i class="fa-solid fa-music music-icon"></i>
+        <div class="song-info">
+          <strong>admirin’ you</strong>
+          <span>Karan Aujla</span>
+          <p>Because sometimes all I really do is admire you.</p>
+        </div>
+      </div>
+      <a href="https://open.spotify.com/search/admirin%20you%20karan%20aujla" target="_blank" class="song-btn">Open</a>
+    </div>
+
+    <div class="song-card">
+      <div class="song-left">
+        <i class="fa-solid fa-music music-icon"></i>
+        <div class="song-info">
+          <strong>Perfect</strong>
+          <span>Ed Sheeran</span>
+          <p>This one plays and all I can think is — this is us.</p>
+        </div>
+      </div>
+      <a href="https://open.spotify.com/search/Perfect%20Ed%20Sheeran" target="_blank" class="song-btn">Open</a>
+    </div>
+
+    <div class="song-card">
+      <div class="song-left">
+        <i class="fa-solid fa-music music-icon"></i>
+        <div class="song-info">
+          <strong>A Thousand Years</strong>
+          <span>Christina Perri</span>
+          <p>Some loves feel timeless. This is one of them.</p>
+        </div>
+      </div>
+      <a href="https://open.spotify.com/search/A%20Thousand%20Years%20Christina%20Perri" target="_blank" class="song-btn">Open</a>
+    </div>
+
+    <div class="song-card">
+      <div class="song-left">
+        <i class="fa-solid fa-music music-icon"></i>
+        <div class="song-info">
+          <strong>Until I Found You</strong>
+          <span>Stephen Sanchez</span>
+          <p>Life felt different before you. Better after you.</p>
+        </div>
+      </div>
+      <a href="https://open.spotify.com/search/Until%20I%20Found%20You" target="_blank" class="song-btn">Open</a>
+    </div>
+
+    <div class="song-card">
+      <div class="song-left">
+        <i class="fa-solid fa-music music-icon"></i>
+        <div class="song-info">
+          <strong>I Wanna Be Yours</strong>
+          <span>Arctic Monkeys</span>
+          <p>Loving you in all the little, quiet ways.</p>
+        </div>
+      </div>
+      <a href="https://open.spotify.com/search/I%20Wanna%20Be%20Yours%20Arctic%20Monkeys" target="_blank" class="song-btn">Open</a>
+    </div>
+
+    <div class="song-card">
+      <div class="song-left">
+        <i class="fa-solid fa-music music-icon"></i>
+        <div class="song-info">
+          <strong>Can’t Help Falling in Love</strong>
+          <span>Elvis Presley</span>
+          <p>Loving you was never a choice — it just happened.</p>
+        </div>
+      </div>
+      <a href="https://open.spotify.com/search/Can%27t%20Help%20Falling%20in%20Love%20Elvis" target="_blank" class="song-btn">Open</a>
+    </div>
+
+  </div>
+
+  <div class="playlist-footer">
+    <a
+      href="https://open.spotify.com/playlist/2V3O7VhwvSv0fi3sRBZNkt"
+      target="_blank"
+      class="full-playlist-btn"
+    >
+      Open our full playlist 💗
+    </a>
+  </div>
+</section>
+
+<!-- 20 REASONS SECTION -->
+<section id="reasons" class="reasons-section">
+  <h2 class="reasons-title">20 Reasons I Love You</h2>
+  <p class="reasons-subtitle">
+    Tap a card to flip it 💗
+  </p>
+
+  <div class="reasons-grid">
+    <!-- CARD TEMPLATE -->
+    <!-- Repeat for 20 cards -->
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">1</div>
+        <div class="reason-back">The way you say my name.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">2</div>
+        <div class="reason-back">How safe you make me feel.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">3</div>
+        <div class="reason-back">Your smile.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">4</div>
+        <div class="reason-back">Your eyes.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">5</div>
+        <div class="reason-back">The way you listen.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">6</div>
+        <div class="reason-back">Your hugs.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">7</div>
+        <div class="reason-back">Your strength.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">8</div>
+        <div class="reason-back">Your silly side.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">9</div>
+        <div class="reason-back">The way you care.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">10</div>
+        <div class="reason-back">How you believe in me.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">11</div>
+        <div class="reason-back">Your honesty.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">12</div>
+        <div class="reason-back">Your passion.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">13</div>
+        <div class="reason-back">Your patience.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">14</div>
+        <div class="reason-back">Comfortable silence with you.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">15</div>
+        <div class="reason-back">Your cute texts.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">16</div>
+        <div class="reason-back">The way you hold my hand.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">17</div>
+        <div class="reason-back">Your trust.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">18</div>
+        <div class="reason-back">Making moments special.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">19</div>
+        <div class="reason-back">You make me better.</div>
+      </div>
+    </div>
+
+    <div class="reason-card" onclick="flipCard(this)">
+      <div class="reason-inner">
+        <div class="reason-front">20</div>
+        <div class="reason-back">Because you are you.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEART COUNTER -->
+  <div class="love-counter">
+    <div class="heart-btn" onclick="incrementLove()">❤️</div>
+    <p>Times you've been loved today: <span id="loveCount">0</span></p>
+
+    <button class="compliment-btn" onclick="revealCompliment()">
+      Reveal Compliment
+    </button>
+
+    <p id="complimentText" class="compliment-text"></p>
+  </div>
+</section>
+
+<!-- DOODLE SECTION -->
+<section id="doodle" class="doodle-section">
+  <h2 class="doodle-title">Doodle Something for Me</h2>
+  <p class="doodle-subtitle">
+    Draw with your finger or mouse. Save it, keep it, or send it to me 💗
+  </p>
+
+  <div class="doodle-wrapper">
+    <!-- CANVAS -->
+    <canvas id="doodleCanvas"></canvas>
+
+    <!-- TOOLS -->
+    <div class="doodle-tools">
+
+      <div class="tool-group">
+        <p class="tool-title">Colors</p>
+        <div class="colors">
+          <button class="color" data-color="#f6b1c8"></button>
+          <button class="color" data-color="#e88aa9"></button>
+          <button class="color" data-color="#cdb4db"></button>
+          <button class="color" data-color="#ffc8dd"></button>
+          <button class="color" data-color="#a2d2ff"></button>
+          <button class="color" data-color="#ffd6a5"></button>
+        </div>
+      </div>
+
+      <div class="tool-group">
+        <p class="tool-title">Brush Size</p>
+        <input type="range" id="brushSize" min="2" max="20" value="4" />
+      </div>
+
+      <div class="tool-group">
+        <p class="tool-title">Tools</p>
+        <button id="penTool" class="tool-btn active">✏️ Pen</button>
+        <button id="eraserTool" class="tool-btn">🧽 Eraser</button>
+      </div>
+
+      <div class="tool-group">
+        <p class="tool-title">Stickers</p>
+        <div class="stickers">
+          <button class="sticker" data-sticker="❤️">❤️</button>
+          <button class="sticker" data-sticker="✨">✨</button>
+          <button class="sticker" data-sticker="🌸">🌸</button>
+          <button class="sticker" data-sticker="⭐">⭐</button>
+          <button class="sticker" data-sticker="🦋">🦋</button>
+        </div>
+        <small>Tap sticker, then tap canvas</small>
+      </div>
+
+      <div class="tool-actions">
+        <button id="saveDoodle" class="primary-btn">Save 💾</button>
+        <button id="clearDoodle" class="secondary-btn">Clear</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- PUZZLE GAME SECTION -->
+<section id="puzzle" class="puzzle-section">
+  <h2 class="puzzle-title">Piece Us Together 💗</h2>
+  <p class="puzzle-subtitle">
+    Put us together, one memory at a time.
+  </p>
+
+  <div class="puzzle-wrapper">
+    <!-- PIECES TRAY -->
+    <div class="puzzle-tray" id="puzzleTray"></div>
+
+    <!-- BOARD -->
+    <div class="puzzle-board" id="puzzleBoard"></div>
+  </div>
+
+  <button class="secondary-btn" onclick="resetPuzzle()">Clear Puzzle</button>
+</section>
+<!-- MEMORY MATCH GAME -->
+<section id="memory-match" class="memory-match-section">
+  <h2 class="memory-match-title">One More Surprise 💗</h2>
+  <p class="memory-match-subtitle">
+    Match the memories. Some things are meant to find each other.
+  </p>
+
+  <div class="memory-grid" id="memoryGrid"></div>
+
+  <button class="memory-reset-btn" onclick="resetMemoryGame()">
+    Reset Game 🔄
+  </button>
+</section>
+  
+  <section id="future" class="future-section">
+
+  <section id="future" class="future-section">
+
+  <section id="future" class="future-section">
+
+  <h2 class="future-title">Our Future 💖</h2>
+  <p class="future-subtitle">
+    How I see our days when I fall asleep every night.
+  </p>
+
+  <div class="future-grid">
+    <div>Moving in together 🏡</div>
+    <div>Chilling every weekend 🛋️✨</div>
+    <div>Looking for forever 💍</div>
+    <div>Waking up to each other’s faces 🌅</div>
+  </div>
+
+</section>
+
+
+  <!-- ONE LAST THING -->
+  <div class="future-card final-note">
+    <h2 class="future-title">One Last Thing…</h2>
+    <p class="future-description">
+      A final note. Something I want you to always remember.
+    </p>
+
+    <div class="letter-text">
+      <p>
+        My dearest Tishuu,<br><br>
+
+        My mornings, my afternoons, my evenings and my nights all feel better
+        with you here. You are such a positive influence in my life, with
+        everything you are and everything you make me want to become.
+        <br><br>
+
+        You are earnest, hardworking, focused on your goals, and most
+        importantly, you deserve everything you want in your life and much
+        more. I am not just saying this — I have seen you up close, how much
+        things matter to you and how much effort you put into them.
+        <br><br>
+
+        Happy Birthday to the person whose existence has made me the happiest.
+      </p>
+
+      <div class="letter-sign">With all my love, Het</div>
+    </div>
+
+    <div class="future-actions">
+      <button onclick="makeItRain()">Make it rain hearts 💖</button>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+  Made by Het with pure love 💗
+</footer><!-- NAVBAR -->
+
+
