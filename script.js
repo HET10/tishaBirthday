@@ -528,7 +528,3 @@ function toggleSecret() {
 function toggleSecretNote() {
   document.getElementById("secretNote").classList.toggle("active");
 }
-
-
-
-
